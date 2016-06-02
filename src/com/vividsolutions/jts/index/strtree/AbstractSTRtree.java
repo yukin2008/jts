@@ -125,9 +125,10 @@ public abstract class AbstractSTRtree {
   }
 
   protected int compareDoubles(double a, double b) {
-    return a > b ? 1
-         : a < b ? -1
-         : 0;
+//    return a > b ? 1
+//         : a < b ? -1
+//         : 0;
+	 return Double.compare(a, b);
   }
 
   /**
